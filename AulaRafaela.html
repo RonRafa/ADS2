@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz para programadores</title>
+    <meta name="description" content="Um quiz interativo ">
+
+</head>
+<body>
+    <header>
+        <h1>Quiz para programadores</h1>
+        <p>Testar conhecimentos</p>
+    </header>
+    <main>
+        <!--Introdução-->
+        <section>
+            <h2>Sobre esse quiz</h2> <!--b tbm é negrito-->
+            <p><strong>Quiz desenvolvido</strong> por <em>Rafaella</em> Ballerini</p> <!--i tbm é itálico-->
+            <p>Você encotrará <abbr title="HyperText Markup Language">HTML</abbr></p> <!--legenda de abreviação-->
+        </section>
+        <!--P1-->
+        <section>
+            <h2>Pergunta 1: Qual linguagem?</h2>
+            <form>
+                <input type="radio" value="Python" id="p1a" name="pergunta1">
+                <label for="p1a">Python</label><br>
+                <input type="radio" value="HTML" id="p2a" name="pergunta1">
+                <label for="p2a">HTML</label><br>
+                <input type="radio" value="Javascript" id="p3a" name="pergunta1">
+                <label for="p3a">Javascript</label><br>
+                <input type="radio" value="Ruby" id="p4a" name="pergunta1">
+                <label for="p4a">Ruby</label>
+            </form>
+        </section>
+        <!--P2-->
+        <section>
+            <h2>Pergunta 2: Na <abbr title="Uniform Resource Locator">URL</abbr> https://www.google.com o trecho google.com é o ____</h2>
+            <form>
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite seua resposta...">
+        </section>
+        <!--P3-->
+        <section>
+            <h2>Pergunta 3: Escreva um exemplo de senha forte:</h2>
+            <form>
+                <input type="password" id="p3" placeholder="digite aqui...">
+            </form>
+        </section> 
+        <!--P4 data-->
+        <section>
+            <h2>Qual a data do HTML?</h2>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+
+        </section>
+        <!--P5 checkbox-->
+        <section>
+            <h2>Pergunta 5:Quais dessas tecnologias são linguagens de programação?</h2>
+            <form>
+                <input type="checkbox" id="p5a" name="pergunta5" value="Javascript">
+                <label for="p5a">Javascript</label><br>
+                <input type="checkbox" id="p5b" name="pergunta5" value="HTML">
+                <label for="p5b">HTML</label><br>
+                <input type="checkbox" id="p5c" name="pergunta5" value="Java">
+                <label for="p5c">Java</label><br>
+                <input type="checkbox" id="p5d" name="pergunta5" value="CSS">
+                <label for="p5d">CSS</label><br> 
+            </form>
+            </section>
+            <!--P6 upload-->
+        <section>
+            <h2>Pergunta 6: Faça o upload...</h2>
+            <form>
+                <input type="file" id="p6" name="Pergunta 6" >
+            </form>
+        </section>
+        <!--P7 menu suspenso-->
+        <section>
+            <h2>Pergunta 7: Selecione o atributo</h2>
+            <form>
+                <select name="Pergunta 7" id="p7">
+                    <option value="id">id</option>
+                    <option value="type">type</option>
+                    <option value="placeholder">placeholder</option>
+                </select>
+            </form>
+        </section>
+        <!--P8 IMAGEM com legenda-->
+        <section>
+            <h2>Pergunta 8: Qual a linguagem da imagem?</h2>
+            <figure>
+                <img src="/Modulo 2/imagemm.png" alt="Logo de uma linguagem de programação">
+                <figcaption>Logo de uma linguagem de programação</figcaption>
+            </figure>
+            <input type="text" id="p8" name="pergunta8" placeholder="Digite aqui...">
+        </section>
+        <!--Tabela de pontuação-->
+        <section>
+            <h2>Tabela de pontuação</h2>
+            <table border ="1">
+                <thead>
+                    <tr>
+                        <th>Acertos</th>
+                        <th>Nível</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>0-2</td>
+                    <td>Vixi...</td>
+                </tr>
+                <tr>
+                    <td>3-4</td>
+                    <td>Precisa ficá mió</td>
+                </tr>
+                <tr>
+                    <td>5-7</td>
+                    <td>Boa jovem!</td>
+                </tr>
+                <tr>
+                    <td colspan="2"> 8   ...        Show de bola!</td>
+                </tr>
+            </table>
+            <p>Boa codar!</p>
+        </section>
+        <!--Listas-->
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Clique para ver</summary>
+                <ol> <!--Lista ordenada-->
+                    <li>HTML</li>
+                    <LI>Domínio</LI>
+                    <li>Bar58du*</li>
+                    <li>1991</li>
+                    <li>Javascript, Java</li>
+                    <li>Arquivo com extensão .html</li>
+                    <li>type</li>
+                    <li>Java</li>
+                </ol>
+            </details>
+        </section>
+        <!--Formulário-->
+        <section>
+            <h2>Nos dê sua opnião</h2>
+            <form>
+                <fieldset>
+                    <legend>Nos escreva</legend>
+                <label for="nome">NOME</label>
+                <input type="text" id="Nome" name="Nome"><br>
+
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email"><br>
+                
+                <label for="comentários">COMENTÁRIOS</label><br>
+                <textarea name="comentários" id="comentários" rows="5" cols="70"> </textarea><br>
+                <button onclick="alert ('ENVIADO')" >Enviar feedback</button>
+            </fieldset>
+            </form>
+        </section>
+            
+        <!--teste com mozão-->
+      <section>
+            <!--  <h2>Do que vc está sentindo mais saudade?</h2>
+            <form>
+                <input type="radio" value="do meu beijo" id="p1a" name="pergunta2">
+                <label for="p1a">do meu beijo</label><br>
+                <input type="radio" value="dormir de conchinha no calor" id="p2a" name="pergunta2">
+                <label for="p2a">dormir de conchinha no calor</label><br>
+                <input type="radio" value="do meu cheiro" id="p3a" name="pergunta2">
+                <label for="p3a">do meu cheiro</label><br>
+                <input type="radio" value="do meu pau vibrando" id="p4a" name="pergunta2">
+                <label for="p4a">do meu pau vibrando</label> -->
+            </form>
+        </section>
+    
+    </main>
+    <!--a letra & (&comercial) serve para adicionar simbolos.
+    href = endereço que será aberto ao clicar 
+    target="_blank" faz o link ser aberto em uma nova guia, sem fechar a guia atual.-->
+    <footer>
+        <p> &copy; Todos os direitos reservados</p>
+        <p> Para conhecer mais <a href="https://google.com" target="_blank">clique aqui</a></p>
+    </footer>
+
+</body>
+
+
+</html>
